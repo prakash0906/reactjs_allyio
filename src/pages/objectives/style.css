@@ -1,0 +1,19 @@
+.objectives-wrapper {
+    margin: 32px 96px;
+}
+
+.filter-wrapper {
+    display      : flex;
+    flex-wrap    : wrap;
+    align-items  : baseline;
+    margin-bottom: 32px;
+}
+
+.filter-wrapper label {
+    margin-right: 8px;
+}
+
+.filter-wrapper select {
+    height: 28px;
+    margin: 8px auto 8px 0;
+}

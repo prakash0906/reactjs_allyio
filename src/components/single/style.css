@@ -1,0 +1,67 @@
+.clickable {
+    cursor: pointer;
+}
+
+.title {
+    color  : blue;
+    padding: 4px 0;
+}
+
+.title::before {
+    content            : "";
+    border             : 1px solid grey;
+    border-radius      : 50%;
+    width              : 20px;
+    height             : 20px;
+    background-image   : url("../../assets/images/avatar.png");
+    background-size    : contain;
+    background-position: center;
+    background-repeat  : no-repeat;
+    position           : absolute;
+    margin-left        : -52px;
+}
+
+.button {
+    position          : absolute;
+    margin-left       : -80px;
+    margin-top        : -20px;
+    content           : "";
+    width             : 0;
+    height            : 0;
+    border            : .5em solid black;
+    border-bottom     : none;
+    border-left-color : transparent;
+    border-right-color: transparent;
+    transform         : rotateZ(-90deg);
+}
+
+.button.show {
+    transform: rotateZ(0deg);
+}
+
+.hide-group .group {
+    visibility: hidden;
+    height    : 0;
+    width     : 0;
+}
+
+.group {
+    display: flex;
+    height : 100%;
+}
+
+.vertical {
+    width           : 1px;
+    background-color: grey;
+    margin-left     : -44px;
+    margin-right    : 44px;
+}
+
+.horizontal {
+    height          : 1px;
+    width           : 12px;
+    background-color: grey;
+    position        : absolute;
+    margin-left     : -82px;
+    margin-top      : calc(1em - 4px);
+}
